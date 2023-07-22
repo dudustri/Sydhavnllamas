@@ -17,7 +17,7 @@ const Navbar = () => {
 			<div className="w-full flex justify-between items-center max-w-7x1 mx-auto">
 				<Link
 					to="/"
-					className="flex items-center gap-2"
+					className="flex items-center gap-2 space-x-1.5"
 					onClick={() => {
 						setActive("");
 						window.scrollTo(0, 0);
@@ -28,8 +28,8 @@ const Navbar = () => {
 						alt="logo"
 						className="w-7 h-7 object-contain rounded-full"
 					/>
-					<p className="text-white text-[18px] font-medium cursor-pointer">
-						Eduardo
+					<p className="text-white text-[18px] font-medium cursor-pointer flex space">
+						Eduardo&nbsp; <span className="sm:block hidden"> 🦝 </span>
 					</p>
 				</Link>
 
@@ -57,9 +57,9 @@ const Navbar = () => {
 					<div
 						className={`${
 							toggle ? "hidden" : "flex"
-						} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+						} p-6 black-gradient absolute top-20 right-0 mx-4 my-0 min-w-[120px] z-10 rounded-xl`}
 					>
-						<ul className="list-none flex justify-end item-start flex-col gap-4">
+						<ul className="list-none flex justify-end item-start flex-col gap-2">
 							{" "}
 							{navLinks.map((link) => (
 								<li
