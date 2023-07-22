@@ -91,6 +91,43 @@
 	-webkit-text-fill-color: transparent;
 }
 
+//Responsive canvas right side textarea
+
+.responsive-div {
+}
+
+/* Add a media query for screens smaller than 768px */
+@media (max-width: 767px) {
+	.responsive-div {
+		width: 100%; /* Full width */
+		height: 200px; /* Specific height for smaller screens */
+	}
+}
+
+/* Add another media query for screens between 768px and 1024px */
+@media (min-width: 768px) and (max-width: 1023px) {
+	.responsive-div {
+		width: 300px; /* Specific width for medium-sized screens */
+		height: 300px; /* Specific height for medium-sized screens */
+	}
+}
+
+/* Add a media query for screens larger than 1024px */
+@media (min-width: 1024px) {
+	.responsive-div {
+		width: 500px; /* Specific width for larger screens */
+		height: 400px; /* Specific height for larger screens */
+	}
+}
+
+.max-h-entry {
+	max-height: 600px;
+}
+
+.max-w-entry-text {
+	max-width: 680px;
+}
+
 .blue-text-gradient {
 	/* background: -webkit-linear-gradient(#eee, #333); */
 	background: #56ccf2; /* fallback for old browsers */

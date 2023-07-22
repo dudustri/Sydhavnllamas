@@ -23,11 +23,13 @@ const Navbar = () => {
 						window.scrollTo(0, 0);
 					}}
 				>
-					<img
-						src={logo}
-						alt="logo"
-						className="w-7 h-7 object-contain rounded-full"
-					/>
+					<div className="bg-white p-1 rounded-full">
+						<img
+							src={logo}
+							alt="logo"
+							className="w-8 h-8 object-contain rounded-full border border-black"
+						/>
+					</div>
 					<p className="text-white text-[18px] font-medium cursor-pointer flex space">
 						Eduardo&nbsp; <span className="sm:block hidden"> 🍂 </span>
 					</p>
@@ -49,14 +51,14 @@ const Navbar = () => {
 
 				<div className="sm:hidden flex flex-1 justify-end items-center">
 					<img
-						src={toggle ? menu : close}
+						src={toggle ? close : menu}
 						alt={menu}
 						className="w-[20px] h-[20px] object-contain"
 						onClick={() => setToggle(!toggle)}
 					/>
 					<div
 						className={`${
-							toggle ? "hidden" : "flex"
+							toggle ? "flex" : "hidden"
 						} p-6 black-gradient absolute top-20 right-0 mx-4 my-0 min-w-[120px] z-10 rounded-xl`}
 					>
 						<ul className="list-none flex justify-end item-start flex-col gap-2">
