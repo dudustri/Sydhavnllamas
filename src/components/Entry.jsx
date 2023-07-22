@@ -26,7 +26,7 @@ const Entry = () => {
 						using technology 🍃🌍🌳
 					</p>
 				</div>
-				<div style={{ width: "400px", height: "400px" }}>
+				<div style={{ width: "450px", height: "450px" }}>
 					<ComputersCanvas />
 				</div>
 			</div>
