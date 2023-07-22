@@ -59,6 +59,12 @@
 	background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
 }
 
+.black-yellow-gradient {
+	background: "#00cea8";
+	background: linear-gradient(90.13deg, #ffeb3b 1.9%, #00cea8 97.5%);
+	background: -webkit-linear-gradient(-90.13deg, #ffeb3b 1.9%, #00cea8 97.5%);
+}
+
 .orange-text-gradient {
 	background: #f12711; /* fallback for old browsers */
 	background: -webkit-linear-gradient(
@@ -99,24 +105,24 @@
 /* Add a media query for screens smaller than 768px */
 @media (max-width: 767px) {
 	.responsive-div {
-		width: 100%; /* Full width */
-		height: 200px; /* Specific height for smaller screens */
+		width: 150px;
+		height: 150px; /* Specific height for smaller screens */
 	}
 }
 
 /* Add another media query for screens between 768px and 1024px */
 @media (min-width: 768px) and (max-width: 1023px) {
 	.responsive-div {
-		width: 300px; /* Specific width for medium-sized screens */
-		height: 300px; /* Specific height for medium-sized screens */
+		width: 200px; /* Specific width for medium-sized screens */
+		height: 200px; /* Specific height for medium-sized screens */
 	}
 }
 
 /* Add a media query for screens larger than 1024px */
 @media (min-width: 1024px) {
 	.responsive-div {
-		width: 500px; /* Specific width for larger screens */
-		height: 400px; /* Specific height for larger screens */
+		width: 600px; /* Specific width for larger screens */
+		height: 300px; /* Specific height for larger screens */
 	}
 }
 

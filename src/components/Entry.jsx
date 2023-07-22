@@ -24,7 +24,7 @@ const Entry = () => {
 						🍃🌍🌳
 					</p>
 				</div>
-				<div className="responsive-div">
+				<div className="responsive-div rounded-2xl border-2 border-dashed border-orange-200 mt-5">
 					<ComputersCanvas />
 				</div>
 				<div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">

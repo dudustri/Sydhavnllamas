@@ -15,7 +15,7 @@ const Computers = () => {
 				object={computer.scene}
 				scale={1}
 				position={[0, -1, 0]}
-				rotation={[-0.2, 0.35, 0.25]}
+				rotation={[-0.3, 0.1, 0.35]}
 			/>
 		</mesh>
 	);
@@ -26,14 +26,14 @@ const ComputersCanvas = () => {
 		<Canvas
 			frameloop="demand"
 			shadows
-			camera={{ position: [8, 6, 5], fov: 25 }}
+			camera={{ position: [8, 6, 5], fov: 18 }}
 			gl={{ preserveDrawingBuffer: true }}
 		>
 			<Suspense fallback={<CanvasLoader />}>
 				<OrbitControls
 					enableZoom={true}
-					maxPolarAnle={Math.PI / 2}
-					minPolarAngle={Math.PI / 4}
+					maxPolarAnle={Math.PI / 5}
+					minPolarAngle={Math.PI / 5}
 				/>
 				<Computers />
 			</Suspense>
