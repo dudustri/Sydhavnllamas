@@ -29,7 +29,7 @@ const Navbar = () => {
 						className="w-7 h-7 object-contain rounded-full"
 					/>
 					<p className="text-white text-[18px] font-medium cursor-pointer flex space">
-						Eduardo&nbsp; <span className="sm:block hidden"> 🦝 </span>
+						Eduardo&nbsp; <span className="sm:block hidden"> 🍂 </span>
 					</p>
 				</Link>
 

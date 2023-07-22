@@ -15,10 +15,19 @@ const Entry = () => {
 				</div>
 				<div>
 					<h1 className={`${styles.pageHeadText}`}>
-						Hello there! I'm <span className="text-[#ffee5d]">Eduardo</span>
+						Hello there! I&apos;m
+						<span className="text-[#ffee5d]"> Eduardo</span>
 					</h1>
+					<p className={`${styles.pageSubText} mt-2 text-white-100`}>
+						{" "}
+						I like to develop backend applications and hope to{" "}
+						<br className="sm:block hidden" /> contribute to accelerating the
+						green transition <br className="sm:block hidden" /> around the world
+						using technology 🍃🌍🌳
+					</p>
 				</div>
 			</div>
+			<ComputersCanvas />
 		</section>
 	);
 };
