@@ -55,7 +55,7 @@ const About = () => {
 
 			<motion.p
 				variants={fadeIn("", "", 0.2, 1)}
-				className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+				className={`${styles.descriptionTest} mt-4 text-secondary max-w-3xl`}
 			>
 				{presentationText[selectedCard]}
 			</motion.p>
