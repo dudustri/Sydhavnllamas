@@ -5,7 +5,7 @@ import { ComputersCanvas } from "./canvas";
 
 const Entry = () => {
 	return (
-		<section className="relative w-full h-screen max-h-entry mx-auto">
+		<section className="relative w-full h-[85vh] max-h-entry mx-auto">
 			<div
 				className={`${styles.paddingX} absolute inset-0 top-[120px] mx-auto flex flex-row items-start gap-8`}
 			>
@@ -18,16 +18,16 @@ const Entry = () => {
 						Hello there! I&apos;m
 						<span className="text-[#ffee5d]"> Eduardo</span>
 					</h1>
-					<p className={`${styles.pageSubText} mt-2 text-white-100`}>
+					<p className={`${styles.pageSubText} mt-5 text-white-100`}>
 						I like to develop backend applications and hope to contribute to
 						accelerating the green transition around the world using technology
 						🍃🌍🌳
 					</p>
 				</div>
-				<div className="responsive-div rounded-2xl border-2 border-dashed border-orange-200 mt-5">
+				<div className="responsive-div rounded-2xl border-2 border-dashed border-orange-200 mt-5 ml-auto">
 					<ComputersCanvas />
 				</div>
-				<div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+				<div className="absolute xs:bottom-8 bottom-4 w-full flex justify-center items-center">
 					<a href="#about">
 						<div className="w-[35px] h-[64px] rounded-3xl border-4 border-yellow-300 flex justify-center items-start p-2">
 							<motion.dev
@@ -37,7 +37,7 @@ const Entry = () => {
 									repeat: Infinity,
 									repeatType: "loop",
 								}}
-								className="w-3 h-3 rounded-full bg-yellow-300 mb-1"
+								className="w-2 h-2 rounded-full bg-yellow-300 mb-1"
 							/>
 						</div>
 					</a>
