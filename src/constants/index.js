@@ -1,8 +1,8 @@
 import {
-    mobile,
+    energyalternative,
     backend,
-    creator,
-    web,
+    devops,
+    renewableenergy,
     javascript,
     typescript,
     html,
@@ -42,20 +42,20 @@ export const navLinks = [
 
 const cardTitles = [
     {
-        title: "Web Developer",
-        icon: web,
-    },
-    {
-        title: "React Native Developer",
-        icon: mobile,
-    },
-    {
         title: "Backend Developer",
         icon: backend,
     },
     {
-        title: "Content Creator",
-        icon: creator,
+        title: "Energy Engineer",
+        icon: energyalternative,
+    },
+    {
+        title: "Green Transition Enthusiast",
+        icon: renewableenergy,
+    },
+    {
+        title: "Cloud Computing & DevOps",
+        icon: devops,
     },
 ];
 
