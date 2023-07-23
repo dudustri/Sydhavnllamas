@@ -44,11 +44,11 @@
 }
 
 .yellow-gradient {
-	background: #ffeb3b;
-	background: linear-gradient(-90deg, #ffeb3b 0%, rgba(177, 151, 46, 0) 100%);
+	background: #fff59d;
+	background: linear-gradient(-90deg, #fff59d 0%, rgba(177, 151, 46, 0) 100%);
 	background: -webkit-linear-gradient(
 		-90deg,
-		#ffeb3b 0%,
+		#fff59d 0%,
 		rgba(177, 151, 46, 0) 100%
 	);
 }
@@ -57,6 +57,12 @@
 	background: "#00cea8";
 	background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
 	background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+}
+
+.black-yellow-gradient {
+	background: "#00cea8";
+	background: linear-gradient(90.13deg, #fff59d 1.9%, #00cea8 97.5%);
+	background: -webkit-linear-gradient(-90.13deg, #fff59d 1.9%, #00cea8 97.5%);
 }
 
 .orange-text-gradient {
@@ -99,33 +105,33 @@
 /* Add a media query for screens smaller than 768px */
 @media (max-width: 767px) {
 	.responsive-div {
-		width: 100%; /* Full width */
-		height: 200px; /* Specific height for smaller screens */
+		width: 30vw;
+		height: 150px; /* Specific height for smaller screens */
 	}
 }
 
 /* Add another media query for screens between 768px and 1024px */
 @media (min-width: 768px) and (max-width: 1023px) {
 	.responsive-div {
-		width: 300px; /* Specific width for medium-sized screens */
-		height: 300px; /* Specific height for medium-sized screens */
+		width: 35vw;
+		height: 200px;
 	}
 }
 
 /* Add a media query for screens larger than 1024px */
 @media (min-width: 1024px) {
 	.responsive-div {
-		width: 500px; /* Specific width for larger screens */
-		height: 400px; /* Specific height for larger screens */
+		width: 40vw;
+		height: 300px;
 	}
 }
 
 .max-h-entry {
-	max-height: 600px;
+	max-height: 750px;
 }
 
 .max-w-entry-text {
-	max-width: 680px;
+	max-width: 35vw;
 }
 
 .blue-text-gradient {

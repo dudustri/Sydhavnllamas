@@ -1,8 +1,8 @@
 import {
-    mobile,
+    energyalternative,
     backend,
-    creator,
-    web,
+    devops,
+    renewableenergy,
     javascript,
     typescript,
     html,
@@ -40,22 +40,76 @@ export const navLinks = [
     },
 ];
 
-const services = [
-    {
-        title: "Web Developer",
-        icon: web,
-    },
-    {
-        title: "React Native Developer",
-        icon: mobile,
-    },
+
+const titleIntro = [
+    "Overview .",
+    "Backend Developer ☕",
+    "Energy Engineer ⚡",
+    "Green Transition Enthusiast 🌊",
+    "Cloud and Devops ☁️",
+];
+
+const presentationText = [
+    "A passionate Backend Developer and Energy Engineer, currently pursuing \
+an MSc in Software Design at ITU  of Copenhagen. With a keen interest in exploring the \
+intricacies of new technologies, I immerse myself in the vibrant world \
+of software and hardware development. I aspire to uncover the \
+synergy between technology and sustainability, discovering how these two \
+forces can work hand in hand always looking from the efficiency perspective.",
+
+    "As a Backend Developer, I thrive on crafting the unseen backbone of \
+applications, ensuring seamless data management and optimal performance. \
+My passion lies in learning and applying such as designing robust server-side \
+architectures, meticulously handling databases, and building efficient APIs. \
+Embracing the ever-evolving landscape of programming languages and frameworks, \
+I am committed to delivering high-quality, scalable, and secure solutions that \
+empower the frontend to shine✨",
+
+    "As an Energy Engineer by background, I am driven by the goal of \
+promoting sustainable energy practices and reducing the carbon footprint \
+of modern technology. My expertise lies in designing and simulating energy-efficient \
+systems, optimizing energy usage, and exploring renewable energy \
+sources. I firmly believe in the transformative power of eco-conscious engineering, \
+and I am dedicated to shaping a greener future through innovation, leveraging software \
+tools as key allies in this endeavor.",
+
+    "As a fervent Green Transition Enthusiast, I am deeply committed to \
+advocating for environmental sustainability in every aspect of life. \
+From personal habits to professional endeavors, I consistently strive to \
+make eco-friendly choices and inspire others to do the same. Embracing \
+the philosophy of sustainable living, I actively support and participate \
+in initiatives that foster a harmonious coexistence with nature, \
+acknowledging our responsibility to protect and preserve the planet for \
+future generations.",
+
+    "Fascinated by the dynamic \
+world of Cloud Computing and DevOps, I am drawn to the transformative \
+power of cloud technologies in modernizing software development and \
+streamlining operations. I aspire one day to design and orchestrate continuous \
+deployment, and automated workflows, harnessing \
+the potential of cloud platforms to create agile, scalable, and reliable solutions \
+as efficiently as possible. My goal is to start a project to enhance \
+energy efficiency in data centers.",
+];
+
+
+
+const cardTitles = [
     {
         title: "Backend Developer",
         icon: backend,
     },
     {
-        title: "Content Creator",
-        icon: creator,
+        title: "Energy Engineer",
+        icon: energyalternative,
+    },
+    {
+        title: "Green Transition Enthusiast",
+        icon: renewableenergy,
+    },
+    {
+        title: "Cloud Computing & DevOps",
+        icon: devops,
     },
 ];
 
@@ -262,4 +316,4 @@ const projects = [
     },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { cardTitles, titleIntro, presentationText, technologies, experiences, testimonials, projects };
