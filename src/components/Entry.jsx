@@ -10,13 +10,13 @@ const Entry = () => {
 				className={`${styles.paddingX} absolute inset-0 top-[120px] mx-auto flex flex-row items-start gap-8`}
 			>
 				<div className="flex flex-col justify-center items-center mt-5">
-					<div className="w-5 h-5 rounded-full bg-[#ffee5d] z-10" />
+					<div className="w-5 h-5 rounded-full bg-[#fff59d] z-10" />
 					<div className="w-1 sm:h-80 h-40 yellow-gradient" />
 				</div>
 				<div className="max-w-entry-text">
 					<h1 className={`${styles.pageHeadText}`}>
 						Hello there! I&apos;m
-						<span className="text-[#ffee5d]"> Eduardo</span>
+						<span className="text-[#fff59d]"> Eduardo</span>
 					</h1>
 					<p className={`${styles.pageSubText} mt-5 text-white-100`}>
 						I like to develop backend applications and hope to contribute to
@@ -24,12 +24,12 @@ const Entry = () => {
 						🍃🌍🌳
 					</p>
 				</div>
-				<div className="responsive-div rounded-2xl border-2 border-dashed border-orange-200 mt-5 ml-auto">
+				<div className="responsive-div rounded-2xl border-2 border-dashed border-yellow-200 mt-5 ml-auto">
 					<ComputersCanvas />
 				</div>
 				<div className="absolute xs:bottom-8 bottom-4 w-full flex justify-center items-center">
 					<a href="#about">
-						<div className="w-[35px] h-[64px] rounded-3xl border-4 border-yellow-300 flex justify-center items-start p-2">
+						<div className="w-[35px] h-[64px] rounded-3xl border-4 border-yellow-200 flex justify-center items-start p-2">
 							<motion.dev
 								animate={{ y: [0, 24, 0] }}
 								transition={{
@@ -37,7 +37,7 @@ const Entry = () => {
 									repeat: Infinity,
 									repeatType: "loop",
 								}}
-								className="w-2 h-2 rounded-full bg-yellow-300 mb-1"
+								className="w-2 h-2 rounded-full bg-yellow-200 mb-1"
 							/>
 						</div>
 					</a>

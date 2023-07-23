@@ -44,11 +44,11 @@
 }
 
 .yellow-gradient {
-	background: #ffeb3b;
-	background: linear-gradient(-90deg, #ffeb3b 0%, rgba(177, 151, 46, 0) 100%);
+	background: #fff59d;
+	background: linear-gradient(-90deg, #fff59d 0%, rgba(177, 151, 46, 0) 100%);
 	background: -webkit-linear-gradient(
 		-90deg,
-		#ffeb3b 0%,
+		#fff59d 0%,
 		rgba(177, 151, 46, 0) 100%
 	);
 }
@@ -61,8 +61,8 @@
 
 .black-yellow-gradient {
 	background: "#00cea8";
-	background: linear-gradient(90.13deg, #ffeb3b 1.9%, #00cea8 97.5%);
-	background: -webkit-linear-gradient(-90.13deg, #ffeb3b 1.9%, #00cea8 97.5%);
+	background: linear-gradient(90.13deg, #fff59d 1.9%, #00cea8 97.5%);
+	background: -webkit-linear-gradient(-90.13deg, #fff59d 1.9%, #00cea8 97.5%);
 }
 
 .orange-text-gradient {
