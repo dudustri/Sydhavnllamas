@@ -175,7 +175,7 @@ const experiences = [
         icon: starbucks,
         iconBg: "#383E56",
         date: "YYYY-MM-DD - YYYY-MM-DD",
-        points: [
+        description: [
             "Lorem Ipsum Lorem Ipsum Lorem Ipsum",
             "Lorem Ipsum Lorem Ipsum Lorem Ipsum",
             "Lorem Ipsum Lorem Ipsum Lorem Ipsum",
@@ -183,12 +183,12 @@ const experiences = [
         ],
     },
     {
-        title: "React Native Developer",
+        title: "JOB TITLE",
         companyName: "COMPANY TITLE",
         icon: tesla,
         iconBg: "#E6DEDD",
         date: "YYYY-MM-DD - YYYY-MM-DD",
-        points: [
+        description: [
             "Lorem Ipsum Lorem Ipsum Lorem Ipsum",
             "Lorem Ipsum Lorem Ipsum Lorem Ipsum",
             "Lorem Ipsum Lorem Ipsum Lorem Ipsum",
@@ -201,7 +201,7 @@ const experiences = [
         icon: shopify,
         iconBg: "#383E56",
         date: "YYYY-MM-DD - YYYY-MM-DD",
-        points: [
+        description: [
             "Lorem Ipsum Lorem Ipsum Lorem Ipsum",
             "Lorem Ipsum Lorem Ipsum Lorem Ipsum",
             "Lorem Ipsum Lorem Ipsum Lorem Ipsum",
@@ -214,7 +214,7 @@ const experiences = [
         icon: meta,
         iconBg: "#E6DEDD",
         date: "YYYY-MM-DD - Present",
-        points: [
+        description: [
             "Lorem Ipsum Lorem Ipsum Lorem Ipsum",
             "Lorem Ipsum Lorem Ipsum Lorem Ipsum",
             "Lorem Ipsum Lorem Ipsum Lorem Ipsum",
