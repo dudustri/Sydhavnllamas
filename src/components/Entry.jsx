@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import Typewriter from "typewriter-effect";
 
 const Entry = () => {
 	return (
@@ -15,8 +16,23 @@ const Entry = () => {
 				</div>
 				<div className="max-w-entry-text">
 					<h1 className={`${styles.pageHeadText}`}>
-						Hello there! I&apos;m
-						<span className="text-[#fff59d]"> Eduardo</span>
+						{"Hello there! I'm "}
+						<span className="text-[#fff59d]">
+							<Typewriter
+								options={{
+									strings: [
+										"Eduardo",
+										"Sfreddo",
+										"Trindade",
+										"Energy",
+										"Software",
+										"Engineer",
+									],
+									autoStart: true,
+									loop: true,
+								}}
+							/>
+						</span>
 					</h1>
 					<p className={`${styles.pageSubText} mt-5 text-white-100`}>
 						I like to develop backend applications and hope to contribute to
