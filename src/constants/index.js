@@ -15,14 +15,15 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
     carrent,
     jobit,
     tripguide,
     threejs,
+    bodil,
+    vitta,
+    numerous,
+    petinelli,
+    novus,
 } from "../assets";
 
 export const navLinks = [
@@ -170,55 +171,76 @@ const technologies = [
 
 const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
-        iconBg: "#383E56",
-        date: "March 2020 - April 2021",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
+        title: "Backend Developer",
+        companyName: "Numerous",
+        icon: numerous,
         iconBg: "#E6DEDD",
-        date: "Jan 2021 - Feb 2022",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+        date: "February 2023 - Present",
+        description: [
+            "GraphQL API implementation using strawberry",
+            "gRPC API implementation using protocol buffers",
+            "Unit and integration tests for features implemented using test driven development",
+            "Features implemented approaching the Numerous Cloud Services",
+            "Google Cloud Platform utilities and log inspection"
         ],
     },
     {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
+        title: "Systems Engineer",
+        companyName: "Bodil Energy",
+        icon: bodil,
         iconBg: "#383E56",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+        date: "December 2022 - Present",
+        description: [
+            "Development of an aggregator module to handle and process data from external sources as well as data read from devices.",
+            "Digital twin.",
+            "Unit tests",
+            "Node.js and python"
         ],
     },
     {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
+        title: "Software Developer",
+        companyName: "NOVUS Automation",
+        icon: novus,
         iconBg: "#E6DEDD",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+        date: "March 2022 - March 2023",
+        description: [
+            "Development and maintenance of configuration and monitoring of the company's software products for desktop/web and mobile using C++, Java, and Dart/Flutter.",
+            "API tests using JavaScript and Postman. Scrum methodology application and software version control using Git/Gitlab and Sourcetree.",
+            "MQTT and LoRaWAN applications (IoT).",
+        ],
+    },
+    {
+        title: "Simulation Engineer",
+        companyName: "Vitta Residencial",
+        icon: vitta,
+        iconBg: "#383E56",
+        date: "February 2021 - March 2022",
+        description: [
+            "Computational simulation head's engineer and in charge of the internal methodology development to measure the building's thermal, and lighting performance.",
+        ],
+    },
+    {
+        title: "Energy Engineer",
+        companyName: "Petinelli",
+        icon: petinelli,
+        iconBg: "#E6DEDD",
+        date: "July 2019 - December 2020",
+        description: [
+            "Design review: HVAC, electrical, automation, photovoltaic, and lighting systems.",
+            "Thermal and energy building performance analysis.",
+            "Computational simulations. Technical and economical diagnosis of energy efficiency measures.",
+            "Building commissioning process.",
+        ],
+    },
+    {
+        title: "Intern",
+        companyName: "Petinelli",
+        icon: petinelli,
+        iconBg: "#E6DEDD",
+        date: "June 2017 - June 2019",
+        description: [
+            "LEED certification process and energy conservation measures application based on design reviews.",
+            "Renewable energy systems design. Technical and economic feasibility reports.",
         ],
     },
 ];
