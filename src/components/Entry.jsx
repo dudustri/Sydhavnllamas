@@ -16,7 +16,7 @@ const Entry = () => {
 				</div>
 				<div className="max-w-entry-text">
 					<h1 className={`${styles.pageHeadText}`}>
-						{"Hello there! I'm "}
+						Hello there! I'm&nbsp;
 						<span className="text-[#fff59d]">
 							<Typewriter
 								options={{
