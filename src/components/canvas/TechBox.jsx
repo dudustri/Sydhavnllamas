@@ -46,7 +46,7 @@ const TechBoxCanvas = ({ icon }) => {
 		>
 			<Suspense fallback={<CanvasLoader />}>
 				<OrbitControls enableZoom={true} />
-				<Ball imgUrl={icon} />
+				<TechBox imgUrl={icon} />
 			</Suspense>
 
 			<Preload all />
