@@ -6,6 +6,8 @@ import { styles } from "../styles";
 import { cardTitles, titleIntro, presentationText } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
+import { ComputersCanvas } from "./canvas";
+
 import { SectionWrapper } from "../highOrderComponents";
 
 const AboutCard = ({ index, title, icon, onClick, selected }) => {
@@ -48,18 +50,32 @@ const About = () => {
 
 	return (
 		<>
-			<motion.div variants={textVariant()}>
-				<p className={styles.sectionSubText}>Introduction</p>
-				<h2 className={styles.sectionHeadText}>{titleIntro[selectedCard]}</h2>
-			</motion.div>
+			<div className="flex flex-row items-start mt-6">
+				<div>
+					<motion.div variants={textVariant()}>
+						<p className={styles.sectionSubText}>Introduction</p>
+						<h1 className={styles.sectionHeadText}>
+							{titleIntro[selectedCard]}
+						</h1>
+					</motion.div>
 
-			<motion.p
-				variants={fadeIn("", "", 0.2, 1)}
-				className={`${styles.descriptionTest} mt-4 text-secondary max-w-3xl`}
-			>
-				{presentationText[selectedCard]}
-			</motion.p>
-			<div className="mt-20 flex flex-wrap gap-10">
+					<motion.div variants={fadeIn("", "", 0.2, 1)}>
+						<div
+							className={`${styles.descriptionTest} mt-4 text-secondary text-justify max-w-3xl`}
+						>
+							{presentationText[selectedCard]}
+						</div>
+					</motion.div>
+				</div>
+				<div>
+					<motion.div variants={fadeIn("", "", 0.2, 1)}>
+						<div className="responsive-div rounded-full border-0 border-dashed border-yellow-200 mt-auto ml-auto max-w-sm">
+							<ComputersCanvas />
+						</div>
+					</motion.div>
+				</div>
+			</div>
+			<div className="mt-10 flex flex-wrap gap-10">
 				{cardTitles.map((card, index) => (
 					<AboutCard
 						index={index}

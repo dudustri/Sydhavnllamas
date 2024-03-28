@@ -24,7 +24,7 @@ const ComputersCanvas = () => {
 					<hemisphereLight intensity={0.03} groundColor="black" />
 					<pointLight intensity={0.05} />
 				</mesh>
-				<group scale={1} position={[0, -1.2, 0]} rotation={[-0.5, 0.6, 0.45]}>
+				<group scale={0.9} position={[0, -1.2, 0]} rotation={[-0.5, 0.5, 0.45]}>
 					<GreenComputer />
 				</group>
 			</Suspense>

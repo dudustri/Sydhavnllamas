@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
 import Typewriter from "typewriter-effect";
 
 const Entry = () => {
@@ -40,13 +39,16 @@ const Entry = () => {
 						🍃🌍🌳
 					</p>
 				</div>
-				<div className="responsive-div rounded-2xl border-2 border-dashed border-yellow-200 mt-5 ml-auto">
-					<ComputersCanvas />
+				<div className="ml-96 ps-20 mt-2">
+					<img
+						src="https://infobrisas-s3.cdn.net.ar/s3i233/2023/07/infobrisas/images/15/07/150748_e940cbef8e77a3543068fe232cf55ce8fa14e26aa100e41821a2050bf4edfb67/xs.jpg"
+						className="w-[256px] h-[256px] rounded-full object-cover border-2 border-white"
+					/>
 				</div>
 				<div className="absolute xs:bottom-8 bottom-4 w-full flex justify-center items-center">
 					<a href="#about">
 						<div className="w-[35px] h-[64px] rounded-3xl border-4 border-yellow-200 flex justify-center items-start p-2">
-							<motion.dev
+							<motion.div
 								animate={{ y: [0, 24, 0] }}
 								transition={{
 									duration: 2,
