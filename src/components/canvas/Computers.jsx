@@ -1,33 +1,16 @@
-import { Suspense, useEffect, useState } from "react";
+import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { OrbitControls } from "@react-three/drei";
 import CanvasLoader from "../Loader";
-
-const Computers = () => {
-	const computer = useGLTF("./computer_grass/scene.gltf");
-
-	return (
-		<mesh>
-			<hemisphereLight intensity={0.2} groundColor="black" />
-			<pointLight intensity={1} />
-
-			<primitive
-				object={computer.scene}
-				scale={1}
-				position={[0, -1, 0]}
-				rotation={[-0.3, 0.1, 0.35]}
-			/>
-		</mesh>
-	);
-};
+import GreenComputer from "../animated/GreenComputer";
 
 const ComputersCanvas = () => {
 	return (
 		<Canvas
-			frameloop="demand"
+			//frameloop="demand"
 			shadows
 			camera={{ position: [8, 6, 5], fov: 18 }}
-			gl={{ preserveDrawingBuffer: true }}
+			gl={{ preserveDrawingBuffer: false }}
 		>
 			<Suspense fallback={<CanvasLoader />}>
 				<OrbitControls
@@ -35,9 +18,16 @@ const ComputersCanvas = () => {
 					maxPolarAnle={Math.PI / 5}
 					minPolarAngle={Math.PI / 5}
 				/>
-				<Computers />
+				<ambientLight />
+				<directionalLight position={[-5, 5, 5]} castShadow />
+				<mesh>
+					<hemisphereLight intensity={0.03} groundColor="black" />
+					<pointLight intensity={0.05} />
+				</mesh>
+				<group scale={1} position={[0, -1.2, 0]} rotation={[-0.5, 0.6, 0.45]}>
+					<GreenComputer />
+				</group>
 			</Suspense>
-			<Preload all />
 		</Canvas>
 	);
 };
