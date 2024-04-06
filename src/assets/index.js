@@ -29,10 +29,14 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import profile from "./profile.jpg";
+import profile2 from "./profile2.jpg";
 
 export {
   logo,
   backend,
+  profile,
+  profile2,
   devops,
   energyalternative,
   renewableenergy,

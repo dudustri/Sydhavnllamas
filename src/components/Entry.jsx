@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import Typewriter from "typewriter-effect";
+import { profile2 } from "../assets";
 
 const Entry = () => {
 	return (
@@ -41,7 +42,7 @@ const Entry = () => {
 				</div>
 				<div className="ml-96 ps-20 mt-2">
 					<img
-						src="https://infobrisas-s3.cdn.net.ar/s3i233/2023/07/infobrisas/images/15/07/150748_e940cbef8e77a3543068fe232cf55ce8fa14e26aa100e41821a2050bf4edfb67/xs.jpg"
+						src={profile2}
 						className="w-[256px] h-[256px] rounded-full object-cover border-2 border-white"
 					/>
 				</div>

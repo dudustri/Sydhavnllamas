@@ -10,6 +10,7 @@ import {
 	Tech,
 	Works,
 	StarsCanvas,
+	SideBar,
 } from "./components";
 
 function App() {
@@ -20,14 +21,19 @@ function App() {
 					<Navbar />
 					<Entry />
 				</div>
-				<About />
-				<Experience />
-				<Tech />
-				<Works />
-				<Feedbacks />
-				<div className="relative z-0">
-					<Contact />
-					<StarsCanvas />
+				{/* <div className="fixed h-full">
+					<SideBar />
+				</div> */}
+				<div>
+					<About />
+					<Experience />
+					<Tech />
+					<Works />
+					<Feedbacks />
+					<div className="relative z-0">
+						<Contact />
+						<StarsCanvas />
+					</div>
 				</div>
 			</div>
 		</BrowserRouter>
