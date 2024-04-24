@@ -46,7 +46,7 @@ const Entry = () => {
 						className="w-[256px] h-[256px] rounded-full object-cover border-2 border-white"
 					/>
 				</div>
-				<div className="absolute xs:bottom-8 bottom-4 w-full flex justify-center items-center">
+				<div className="absolute left-1/2 transform -translate-x-1/2 xs:bottom-8 bottom-4 flex justify-center items-center">
 					<a href="#about">
 						<div className="w-[35px] h-[64px] rounded-3xl border-4 border-yellow-200 flex justify-center items-start p-2">
 							<motion.div
